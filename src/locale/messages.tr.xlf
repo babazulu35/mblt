@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="mainWelcome" datatype="html">
+        <source>
+        Welcome to <x id="INTERPOLATION" equiv-text="{{ title }}"/>!
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <target>Hoşgeldin <x id="INTERPOLATION" equiv-text="{{ title }}"/>! </target>
+      </trans-unit>
+      <trans-unit id="notficationText" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{notificationText}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <target><x id="INTERPOLATION" equiv-text="{{notificationText}}"/></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

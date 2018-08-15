@@ -1,0 +1,35 @@
+/**
+* @molecule Search Bar
+* @section Form Elements
+* @description
+*  Search bar
+* @markup
+*    <div class="c-search-bar">
+*        <input type="text" class="c-search-bar__input" placeholder="Lorem Ipsum Dolor">
+*        <a href="#" class="c-search-bar__button"><img src="assets/images/search-icon.svg"></a>
+*    </div>
+*/
+
+.c-search-bar {
+    position: relative;
+    width: 626px;
+    &__input {
+        width: 100%;
+        border:0;
+        border-bottom: 2px solid getColor(info-text-grey);
+        outline: none;
+        padding:0px 0px 6px 0px;
+        background: transparent;
+        @include font-family(bold, 22px);
+        color: getColor(white);
+        &::placeholder {
+            @include font-family(bold, 22px);
+            color: rgba(255,255,255,.20);
+        }
+    }
+    &__button {
+        position: absolute;
+        right: 3px;
+        bottom: 10px;
+    }
+}

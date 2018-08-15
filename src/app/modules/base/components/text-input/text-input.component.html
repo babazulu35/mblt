@@ -1,0 +1,18 @@
+<input #input class="c-text-input__input"
+    [formControl]="formControl"
+    ([ngModel])="value"
+    [type]="inputType"
+    [autocomplete]="autocomplete"
+    [name]="name"
+    [required]="required ? true : null"
+    [min]="min"
+    [max]="max"
+    [maxlength]="maxlength"
+    [tabindex]="isDisabled ? -1 : 0"
+    [placeholder]="placeholder"
+    (focus)="onFocusHandler($event)"
+    (focusout)="onBlurHandler($event)"
+    (keyup.enter)="save($event)"
+    (keyup.escape)="dismissChanges($event)">
+<div *ngIf="hasError && !isFocused" class="c-text-input__error">{{error}}</div>
+<label class="c-text-input__label">{{label}}</label>

@@ -1,0 +1,30 @@
+import { Variants } from './variants';
+export interface Products {
+  AllocationType:number;
+  AllocationType_Desc:string;
+  Campaigns:any;
+  CanGoCollectData:boolean;
+  CountOfProductsSelected:number;
+  FirendSeats:any;
+  Friends:any;
+  GroupId:number;
+  Id:number;
+  IsAvailable:boolean;
+  IsReservedProduct:boolean;
+  IsSoldOut:boolean;
+  MaxAllowedCountOfProducts:number;
+  MetadataList:any[];
+  Name:string;
+  Reason:any;
+  ReservationCustomerId:number;
+  ReservationEndTime:string;
+  ReservationId:number;
+  ReservationType:number;
+  ReservationType_Desc:string;
+  ReservedSeats:any;
+  SeatBuffer:any;
+  SelectionType:any[];
+  Variants:Variants[]
+  Vat:number;
+  VenueUrl:any;
+}

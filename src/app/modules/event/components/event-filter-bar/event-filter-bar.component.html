@@ -1,0 +1,7 @@
+<nav class="c-list-filter-bar">
+  <ul class="c-list-filter-bar__list">
+      <li *ngFor="let item of listItems" class="c-list-filter-bar__list-item" [ngClass]="{'c-list-filter-bar__list-item--active': item.isSelected}">
+        <a href="javascript:void(0)" (click)="checkItem(item)">{{ item.title | translate}}</a>
+      </li>
+  </ul>
+</nav>

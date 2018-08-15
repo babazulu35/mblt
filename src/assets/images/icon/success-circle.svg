@@ -1,0 +1,15 @@
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Kiosk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobilet_Kiosk_Ticketing_08_Success" transform="translate(-485.000000, -148.000000)">
+            <g id="Message" transform="translate(247.000000, 118.000000)">
+                <g id="Group" transform="translate(238.000000, 30.000000)">
+                    <circle id="Icon_Base" fill="#09C800" cx="27" cy="27" r="27"></circle>
+                    <path d="M27.5,14 C20.05625,14 14,20.05625 14,27.5 C14,34.94375 20.05625,41 27.5,41 C34.94375,41 41,34.94375 41,27.5 C41,20.05625 34.94375,14 27.5,14 M27,45 C17.07525,45 9,36.9255 9,27 C9,17.0745 17.07525,9 27,9 C36.92475,9 45,17.0745 45,27 C45,36.9255 36.92475,45 27,45 M25.1437175,34 L18,26.8589907 L21.1497401,23.7107718 L25.1437175,27.7028202 L32.8502599,20 L36,23.1482188 L25.1437175,34 Z" id="Icon_Tick" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

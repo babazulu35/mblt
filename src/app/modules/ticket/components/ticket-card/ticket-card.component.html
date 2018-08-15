@@ -1,0 +1,17 @@
+<div *ngIf="isSelected" class="c-ticket-card__select-area">
+    <img src="assets/images/checked-check-icon.svg">
+    <span>{{'TICKET_CARD.LABEL.SELECTED' | translate}}</span>
+</div>
+<div *ngIf="!isSelected" class="c-ticket-card__select-area">
+    <img src="assets/images/empty-check-icon.svg">
+    <span>{{'TICKET_CARD.LABEL.SELECT' | translate}}</span>
+</div>
+<div class="c-ticket-card__image">
+    <img [src]="ticket?.PerformanceImageUrl | image:'320/240'">
+</div>
+<div class="c-ticket-card__content">
+    <span class="c-ticket-card__content-ticket-info">{{ticketCountInfo}}</span>
+    <div class="c-ticket-card__content-title">{{ticket?.PerformanceName}}</div>
+    <span *ngIf="ticket?.PerformanceDate" class="c-ticket-card__content-date">{{ticket?.PerformanceDate | date:'EEEE, MMMM d, y, h:mm a'}}</span>
+    <span class="c-ticket-card__content-location">{{ticket?.PerformanceVenue}}</span>
+</div>

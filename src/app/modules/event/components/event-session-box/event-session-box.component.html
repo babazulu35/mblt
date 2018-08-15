@@ -1,0 +1,7 @@
+<div class="c-event-session-box-container">
+    <span class="c-event-session-box-checkbox">
+    <img *ngIf="isSelected" src="assets/images/icon/checked-check.svg" />
+    <img *ngIf="!isSelected" src="assets/images/icon/empty-check.svg" />
+  </span>
+    <span class="c-event-session-box-time"> {{ session.Date | date: 'hh:mm' }} </span>
+</div>

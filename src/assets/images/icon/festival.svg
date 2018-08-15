@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="41px" viewBox="0 0 42 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Festivals</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Kiosk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobilet_Kiosk_01_FilterMood" transform="translate(-736.000000, -329.000000)" fill="#FFFFFF">
+            <g id="mood_btns" transform="translate(77.000000, 303.000000)">
+                <g id="btn_festivals" transform="translate(601.000000, 1.000000)">
+                    <g id="Group-3" transform="translate(58.000000, 25.000000)">
+                        <path d="M0,41 L20.7204312,-3.55271368e-15 L41.4495502,41 L27.6706806,41 L27.6706806,35.8438482 L33.0136849,35.8438482 L20.7204312,11.5325927 L8.43586527,35.8438482 L18.1314633,35.8438482 L18.1314633,28.247118 L23.3441503,28.247118 L23.3441503,41 L0,41 Z M31.1458054,10.0630895 C30.3390398,10.0670588 29.5444927,10.25839 28.8261596,10.6216726 L26.4891382,6.01551038 C29.8395005,4.1637121 33.9475214,4.28248488 37.1828162,6.32469039 C40.418111,8.36689589 42.2574296,12.0022445 41.9707863,15.787945 C41.684143,19.5736454 39.317897,22.8974296 35.8111603,24.4401593 L33.4741389,19.8254035 C35.6293238,18.7530104 36.7589811,16.3578931 36.2050389,14.0353061 C35.6510968,11.7127191 33.5583068,10.0695819 31.1458054,10.0630895 Z" id="Icon_Festivals"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

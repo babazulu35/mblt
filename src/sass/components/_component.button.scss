@@ -1,0 +1,149 @@
+/**
+* @atom Button
+* @section Buttons
+* @description
+*  Buttons for various purposes.
+* @markup
+*    <button class="c-button c-button--secondary c-button--lg">
+*        <span class="c-button__icon"><img src="assets/images/icon/ticket-nav.svg" alt="ticket"></span><span class="c-button__label">Biletini Bastır</span>
+*    </button>
+*    <button class="c-button c-button--grey c-button--full-width">
+*        <span class="c-button__icon"><img src="assets/images/icon/qr-code.svg" alt="qrcode"></span><span class="c-button__label">QR Kod ile bastır</span>
+*    </button>
+*    <button class="c-button c-button--primary c-button--full-width">
+*        <span class="c-button__icon"><img src="assets/images/icon/profile.svg" alt="ticket"></span> <span class="c-button__label">Giriş Yap</span>
+*    </button>
+*    <button class="c-button c-button--primary c-button--sm c-button--full-width">
+*     <span class="c-button__label">Continue</span>
+*    </button>
+*    <button class="c-button c-button--primary c-button--xl c-button--full-width">
+*        <span class="c-button__label">Buy Tickets</span><span class="c-button__icon"><img src="assets/images/icon/arrow-right.svg" alt="arrow-right"></span>
+*    </button>
+* @modifiers
+*  c-button--primary purple bg button
+*  c-button--secondary green bg button
+*  c-button--grey grey bg button
+*  c-button--xl biggest width and height button only using on buy tickets cta
+*  c-button--lg larger width button
+*  c-button--sm smaller width and height button
+*  c-button--full-width full container width button
+*/
+
+.c-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: inherit;
+        line-height: 0px;
+        border: 0px;
+        padding: 27px;
+        text-align: center;
+        outline: none;
+        min-width: 2.5em;
+        min-height: 2.5em;
+        vertical-align: middle;
+        pointer-events: none;
+    }
+    
+    &__label {
+        color: getColor(white);
+        @include font-family(bold, 24px);
+        text-decoration: none;
+        vertical-align: middle;
+        font-size: inherit;
+        line-height: 1.125em;
+
+        & + .c-button__icon {
+            margin-left: 0.85em;
+            margin-right: 0px;
+        }
+    }
+    &__icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: inherit;
+        width: 1em;
+        height: 1em;
+        line-height: 0px;
+        img {
+             max-width: 100%;
+             max-height: 100%;
+        }
+
+        & + .c-button__label {
+            margin-left: 0.85em;
+        }
+    }
+    &--disabled {
+        cursor: not-allowed;
+        opacity: 0.65;
+        >* {
+            pointer-events: none;
+        }
+    }
+    &--no-label {
+        button {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+    }
+    &--primary {
+        button {
+            background-color: getColor(cta-purple);
+        }
+    }
+    &--secondary {
+        button {
+            background-color: getColor(cta-green);
+        }
+    }
+    &--info {
+        button {
+            background-color: getColor(bg-grey);
+        }
+        & .c-button__label {
+            color: getColor(cta-purple);
+        }
+    }
+    &--dark {
+        button {
+            background-color: getColor(black);
+        }
+        & .c-button__label {
+            color: getColor(white);
+        }
+    }
+    &--md {
+        button {
+            padding: 0.75em 1.66em;
+        }
+    }
+    &--lg {
+        button {
+            padding: 30px 40px;
+        }
+    }
+    &--sm {
+        button {
+            padding: 17px 40px;
+        }
+    }
+    &--xl {
+        button {
+            padding: 36px 40px;
+        }
+    }
+    &--full-width {
+        width: 100%;
+        button {
+            width: 100%;
+        }
+    }
+}

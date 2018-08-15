@@ -1,0 +1,46 @@
+<div class="r-ticket-wallet-login">
+  <div class="r-ticket-wallet-login__header">
+    <div class="r-ticket-wallet-login__header-left">
+      
+    </div>
+    <div class="r-ticket-wallet-login__header-right">
+      <app-button (clickEvent)="close()" theme="dark" icon="close"></app-button>
+    </div>
+  </div>
+  
+  <div class="r-ticket-wallet-login__content">
+    <h1 class="r-ticket-wallet-login__title">
+      {{'TICKET_WALLET_LOGIN.TITLE' | translate}}
+    </h1>
+    <h2 class="r-ticket-wallet-login__description">
+        {{'TICKET_WALLET_LOGIN.DESCRIPTION' | translate}}
+    </h2>
+    <form [formGroup]="loginForm" class="r-ticket-wallet-login__form-group">
+      <span class="r-ticket-wallet-login__form-control">
+        <app-text-input 
+          type="tel"
+          [value]="'90'"
+          [form]="loginForm"
+          [required]="true"
+          name="UserName"
+          [label]="'TICKET_WALLET_LOGIN.LABEL.MOBILE_NO' | translate"
+          [error]="'TICKET_WALLET_LOGIN.ERROR.MOBILE_NO' | translate"
+          ></app-text-input>
+      </span>
+      <span class="r-ticket-wallet-login__form-control">
+          <app-text-input 
+            type="password"
+            [form]="loginForm"
+            [required]="true"
+            name="Password"
+            [label]="'TICKET_WALLET_LOGIN.LABEL.PASSWORD' | translate"
+            [error]="'TICKET_WALLET_LOGIN.ERROR.PASSWORD' | translate"
+          ></app-text-input>
+      </span>
+      <span class="r-ticket-wallet-login__form-submit">
+        <app-button (clickEvent)="submit()" [label]="'TICKET_WALLET_LOGIN.SUBMIT' | translate"></app-button>
+      </span>
+    </form>
+    <div class="r-ticket-wallet-login__info" [innerHTML]="'TICKET_WALLET_LOGIN.INFO' | translate"></div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+
+<div class="c-info-box" >
+  <div class="c-info-box__title">
+    {{textTitle}}
+  </div>
+  <div class="c-info-box__button">
+    <app-button (clickEvent)="close()" theme="dark" icon="close"></app-button>
+  </div>
+  <app-scroll-container>
+  <div class="c-info-box__content">
+    {{textContent}}
+  </div>
+</app-scroll-container>
+</div>

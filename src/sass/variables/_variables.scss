@@ -1,0 +1,20 @@
+@import "variables.color";
+
+$zindex-dropdown-backdrop:  990 !default;
+$zindex-navbar:            1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-fixed:             1030 !default;
+$zindex-sticky:            1030 !default;
+$zindex-modal-backdrop:    1040 !default;
+$zindex-modal:             1050 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default;
+
+$width-screen:             1024px !default;
+$height-screen:            768px !default;
+$height-header:            70px !default;
+$height-footer:            80px !default;
+
+$grid-gutter-width-base:     0px !default;
+
+$global-scroll-width: 7px;

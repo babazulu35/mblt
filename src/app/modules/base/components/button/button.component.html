@@ -1,0 +1,9 @@
+<button>
+  <span *ngIf="iconUrl || icon" class="c-button__icon">
+    <img [src]="iconUrl || 'assets/images/icon/'+icon+'.svg'">
+  </span>
+  <span *ngIf="label" class="c-button__label">{{label}}</span>
+  <span *ngIf="rightIconUrl || rightIcon" class="c-button__icon">
+    <img [src]="rightIconUrl || 'assets/images/icon/'+rightIcon+'.svg'">
+  </span>
+</button>

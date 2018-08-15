@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="42px" viewBox="0 0 37 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Food</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Kiosk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobilet_Kiosk_01_FilterMood" transform="translate(-150.000000, -448.000000)" fill="#FFFFFF">
+            <g id="mood_btns" transform="translate(77.000000, 303.000000)">
+                <g id="btn_food" transform="translate(0.000000, 121.000000)">
+                    <g id="Group-2" transform="translate(73.000000, 24.000000)">
+                        <path d="M31.7142857,26.25 L37,26.25 L37,42 L31.7142857,42 L31.7142857,26.25 Z M26.4285714,0 L37,0 L37,23.625 L26.4285714,23.625 L26.4285714,0 Z M15.8571429,14 L15.8571429,0 L21.1428571,0 L21.1428571,19.25 L13.2142857,19.25 L13.2142857,42 L7.92857143,42 L7.92857143,19.25 L0,19.25 L0,0 L5.28571429,0 L5.28571429,14 L7.92857143,14 L7.92857143,0 L13.2142857,0 L13.2142857,14 L15.8571429,14 Z" id="Icon_Food"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

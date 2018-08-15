@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Kiosk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobilet_Kiosk_03_Detail_Single" transform="translate(-792.000000, -636.000000)" fill="#000000">
+            <g id="Ticket_Options" transform="translate(588.000000, 249.000000)">
+                <g id="Button_More" transform="translate(152.000000, 385.000000)">
+                    <path d="M61.5454545,7.45454545 L67,7.45454545 L67,11.5454545 L61.5454545,11.5454545 L61.5454545,17 L57.4545455,17 L57.4545455,11.5454545 L52,11.5454545 L52,7.45454545 L57.4545455,7.45454545 L57.4545455,2 L61.5454545,2 L61.5454545,7.45454545 Z" id="Icon_Plus"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

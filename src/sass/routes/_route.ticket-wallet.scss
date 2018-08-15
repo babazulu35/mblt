@@ -1,0 +1,41 @@
+.r-ticket-wallet {
+    &__content {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        padding: 15px 80px 30px;
+    }
+
+    &__ticket-list {
+        display: block;
+        list-style-type: none;
+        margin: -10px;
+
+        &-item {
+            display: inline-block;
+            width: 290px;
+            padding: 10px;
+        }
+    }
+
+    &__loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: getColor(black, 0.75);
+        flex-direction: column;
+        color: getColor(white);
+        @include font-family(bold, 28px);
+        line-height: 1.2em;
+        color: getColor(white);
+
+        img + * {
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+<div class="r-ticket-print-qr">
+  <!-- <div class="r-ticket-print-qr__header">
+    <div class="r-ticket-print-qr__header-left">
+      
+    </div>
+    <div class="r-ticket-print-qr__header-right">
+      <app-button (clickEvent)="close()" theme="dark" icon="close"></app-button>
+    </div>
+  </div> -->
+  
+  <div [ngSwitch]="status" class="r-ticket-print-qr__content">
+    <app-dialog-box *ngSwitchCase="null" [icon]="'qr-code'">
+      <div class="r-ticket-print-qr__description" [innerHTML]="'TICKET_PRINT_QR.DESCRIPTION' | translate"></div>
+      <div actions>
+        <app-button (clickEvent)="startScan()" [label]="'TICKET_PRINT_QR.LABEL.START_SCAN'| translate" theme="primary"></app-button>
+        <a href="javascript:void(0)" (click)="cancel()">{{'TICKET_PRINT_QR.LABEL.CANCEL'| translate}}</a>
+      </div>
+    </app-dialog-box>
+
+    <!--qr progress-->
+    <app-dialog-box *ngSwitchCase="'progress'" [title]="'TICKET_PRINT_QR.TITLE.PROGRESS'| translate" [theme]="status" [useThemeOnTitle]="true">
+      <span class="c-dialog-box__loading"><img src="assets/images/gif/loading.gif"/></span>
+    </app-dialog-box>
+
+    <!--qr error-->
+    <app-dialog-box *ngSwitchCase="'error'" [title]="'TICKET_PRINT_QR.TITLE.ERROR'| translate" [theme]="status" [useThemeOnTitle]="true">
+      <div actions>
+        <app-button (clickEvent)="retry()" [label]="'TICKET_PRINT_QR.LABEL.RETRY'| translate" theme="primary"></app-button>
+      </div>
+    </app-dialog-box>
+
+  </div>
+  
+</div>

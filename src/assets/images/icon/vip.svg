@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Vip</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Kiosk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobilet_Kiosk_03_Detail_Single" transform="translate(-615.000000, -563.000000)" fill="#FFFFFF">
+            <g id="Ticket_Options" transform="translate(588.000000, 249.000000)">
+                <g transform="translate(0.000000, 287.000000)" id="Icon_Vip">
+                    <path d="M30.7037653,27 L27,33.2612801 L35.0000162,43.0000987 L37.7334929,39.6722413 L36.2388205,38.4083398 L35.0000162,39.9166658 L30.0642569,33.9086924 L39.9357755,33.9086924 L37.657608,36.6812489 L39.1522805,37.9448215 L43.0000324,33.2612801 L39.2962672,27 L30.7037653,27 Z M33.6535463,28.9738181 L36.1026169,28.9738181 L34.9503992,31.1657432 L33.6535463,28.9738181 Z M38.2546339,29.0754698 L39.9455044,31.9345453 L36.7512055,31.9345453 L38.2546339,29.0754698 Z M31.594926,29.3294344 L33.1356483,31.9345453 L30.0542038,31.9345453 L31.594926,29.3294344 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

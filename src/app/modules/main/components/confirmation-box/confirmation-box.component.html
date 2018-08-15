@@ -1,0 +1,7 @@
+<app-dialog-box [title]="confirmation?.title" [theme]="confirmation?.theme">
+  <div *ngIf="confirmation?.description" class="c-confirmation-box__description" [innerHTML]="confirmation?.description"></div>
+  <div actions>
+    <app-button (clickEvent)="accept()" *ngIf="confirmation?.confirmButton" [label]="confirmation?.confirmButton?.label" [theme]="confirmation?.confirmButton?.theme || 'primary'"></app-button>
+    <a href="javascript:void(0)" (click)="reject()" *ngIf="confirmation?.dismissButton">{{confirmation?.dismissButton?.label}}</a>
+  </div>
+</app-dialog-box>

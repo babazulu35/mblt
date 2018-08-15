@@ -1,0 +1,15 @@
+<div class="c-dialog-box--{{dialogTheme}} c-dialog-box__container">
+  <div *ngIf="icon" class="c-dialog-box__icon">
+    <img [src]="'assets/images/icon/' + icon + '.svg'"/>
+  </div>
+
+  <div *ngIf="title" class="c-dialog-box__title" [ngClass]="{'c-dialog-box--has-theme': useThemeOnTitle}" [innerHTML]="title"></div>
+
+  <mat-dialog-content class="c-dialog-box__content">
+    <ng-content></ng-content>
+  </mat-dialog-content>
+
+  <mat-dialog-actions class="c-dialog-box__actions">
+    <ng-content select="[actions]"></ng-content>
+  </mat-dialog-actions>
+</div>

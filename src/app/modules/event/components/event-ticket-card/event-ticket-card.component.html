@@ -1,0 +1,16 @@
+<div class="c-ticket-option-card ">
+  <div class="c-ticket-option-card__image">
+    <img src="assets/images/icon/ticket-small.svg">
+  </div>
+  <div class="c-ticket-option-card__content">
+    <div class="c-ticket-option-card__content-ticket-info">
+      <h2 class="c-ticket-option-card__content-ticket-info-type">{{ performanceName }}</h2>
+      <span class="c-ticket-option-card__content-ticket-info-date">Puchase before {{ performanceEndDate | date:'d MMM' }}</span>
+      <!-- <span class="c-ticket-option-card__content-ticket-info-date">Puchase before 29 Sep</span> -->
+    </div>
+    <div class="c-ticket-option-card__content-ticket-price">
+      <span>from</span>
+      <h2 class="c-ticket-option-card__content-ticket-price-amount">{{ performancePrice }} {{ performanceCurrency }}</h2>
+    </div>
+  </div>
+</div>

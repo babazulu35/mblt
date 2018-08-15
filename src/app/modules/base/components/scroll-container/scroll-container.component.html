@@ -1,0 +1,7 @@
+<div *ngIf="hasScroll" class="c-scroll-container__nav" [style.transform]="'translateX(calc(100% + '+navOffsetX+'px)) translateY('+navOffsetY+'px)' | safeStyle">
+  <span class="c-scroll-container__nav-up" (click)="scrollUp($event)"></span>
+  <span class="c-scroll-container__nav-down" (click)="scrollDown($event)"></span>
+</div>
+<div #content class="c-scroll-container__content" [style.height]="contentHeight + 'px'">
+  <ng-content></ng-content>
+</div>

@@ -1,0 +1,48 @@
+/**
+* @molecule List Filter Bar
+* @section Navigations
+* @description
+*  Navbar in event list page for filtering date.
+* @markup
+*    <nav class="c-list-filter-bar">
+*        <ul class="c-list-filter-bar__list">
+*            <li class="c-list-filter-bar__list-item c-list-filter-bar__list-item--active">
+*                <a href="#">Bugün</a>
+*            </li>
+*            <li class="c-list-filter-bar__list-item">
+*                <a href="#">Bu Hafta</a>
+*            </li>
+*            <li class="c-list-filter-bar__list-item">
+*                <a href="#">Bu Haftasonu</a>
+*            </li>
+*            <li class="c-list-filter-bar__list-item">
+*                <a href="#">Gün Seç</a>
+*            </li>
+*        </ul>
+*    </nav>
+*/
+
+.c-list-filter-bar {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        &-item {
+            margin-left: 28px;
+            a {
+                color: getColor(black);
+                @include font-family(bold, 18px);
+                text-decoration: none;
+                padding-bottom: 3px;
+            }
+            &--active {
+                a {
+                    color:getColor(cta-purple);
+                    border-bottom: 4px solid getColor(cta-purple);
+                }
+            }
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+}

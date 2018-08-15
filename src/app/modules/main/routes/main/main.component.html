@@ -1,0 +1,21 @@
+<div #main class="r-main">
+  <div #header class="r-main__header">
+      <app-header></app-header>
+  </div>
+  <!-- <div #container class="r-main__container" [style.margin-top]="headerHeight + 'px'"> -->
+  <div #container class="r-main__container">
+      <div #containerContent class="r-main__content">
+          <router-outlet *ngIf="isAuthenticated"></router-outlet>
+      </div>
+  </div>
+  <!-- <div #footer class="r-main__content-footer">
+      <app-footer></app-footer>
+  </div> -->
+  <!-- <div #overlay class="r-main__overlay" *ngIf="overlayIsOpen"></div>  -->
+  <!-- <div *ngIf="notifications?.length" class="r-main__notifications">
+      <app-notification-box *ngFor="let notification of notifications" [notification]="notification"></app-notification-box>
+  </div> -->
+  <div *ngIf="isLoading" class="r-main__loading">
+      <img src="assets/images/gif/loading.gif"/>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<div class="r-event-detail">
+    <div class="r-event-detail__content r-main__content-body" *ngIf="eventDetail">
+        <app-scroll-container [navOffsetX]=10>
+            <div class="r-event-detail__content-wrapper">
+                <div class="r-event-detail__back-button">
+                    <a href="javascript:void(0)">
+                        <img (click)="goBack()" src="/assets/images/icon/arrow-left.svg" />
+                    </a>
+                </div>
+                <div class="r-event-detail__event-info">
+                    <img class="r-event-detail__event-info-image" [src]="eventInfo.EventCoverImage | image:'470/262'" />
+                    <div class="r-event-detail__event-info-title">{{ eventInfo?.EventTitle }}</div>
+                    <div class="r-event-detail__event-info-date">{{ eventInfo?.EventDate }}</div>
+                    <span class="r-event-detail__event-info-location">{{ eventInfo?.EventVenueName }}
+            <!-- <span class="r-event-detail__event-info-location-more">2 tane daha</span> -->
+                    </span>
+                    <hr class="r-event-detail__event-info-separator">
+                    <p class="r-event-detail__event-info-description">{{ eventInfo?.EventShortDescription['tr-TR'] || eventInfo?.EventShortDescription }}
+                        <a *ngIf="eventDetail?.ProgramComponentContainerType?.length" href="javascript:void(0)" class="r-event-detail__event-info-button">{{ "EVENT_DETAIL.PROGRAM_INFO_BUTTON_TITLE" | translate }}</a>
+                    </p>
+                </div>
+                <div class="r-event-detail__right">
+                    <span *ngIf="isMultiplePerformance">
+            <div class="r-event-detail__right-large-date">{{ largeDateString }}</div>
+            <a (click)="openSelectDateDialog()" href="javascript:void(0)" class="r-event-detail__right-edit-date">
+              <span>
+                <img src="/assets/images/icon/edit.svg" />
+              </span> {{ "EVENT_DETAIL.EDIT_YOUR_DATE" | translate }}
+                    </a>
+                    <div class="r-event-detail__right-select-session">
+                        <span *ngFor="let performance of performancesToShow">
+                <div class="r-event-detail__right-select-session-date"> {{ performance?.key }} </div>
+                <ul class="r-event-detail__right-select-session-list">
+                  <li *ngFor="let perf of performance.value">
+                    <app-event-session-box (click)="getProductsOfSelectedDate(perf)" [isSelected]="dateSelected[perf.Id]" [session]="perf"></app-event-session-box>
+                  </li>
+                </ul>
+              </span>
+                    </div>
+                    </span>
+                    <app-button *ngIf="!isMultiplePerformance" (click)="openBuyTicketModal()" rightIcon="arrow-right" [label]="'EVENT_DETAIL.BUY_TICKET' | translate" size="full-width" theme="primary"></app-button>
+                    <div class="r-event-detail__right-ticket-option">
+                        <div *ngIf="products.length > 0" class="r-event-detail__right-ticket-option-title">{{ "EVENT_DETAIL.TICKET_OPTIONS" | translate }}</div>
+                        <ul class="r-event-detail__right-ticket-option-list">
+                            <li *ngFor="let product of products">
+                                <app-event-ticket-card [product]="product"></app-event-ticket-card>
+                            </li>
+                        </ul>
+                        <!-- <div class="r-event-detail__right-ticket-option-more">
+              <a href="javascript:void(0)">More
+                <span>
+                  <img src="/assets/images/icon/plus-black.svg" />
+                </span>
+              </a>
+            </div> -->
+                    </div>
+                </div>
+            </div>
+        </app-scroll-container>
+    </div>
+</div>

@@ -1,0 +1,132 @@
+/**
+* @structure Header
+* @section Navigations
+* @description
+*  Header that provides main navigation of the site.
+* @markup
+*    <header class="c-header">
+*        <div class="c-header__left">
+*            <a href="#">
+*                <img src="assets/images/logo/mobilet.svg" alt="mobilet">
+*            </a>
+*        </div>
+*        <div class="c-header__middle">
+*            <ul class="c-header__middle-list">
+*                <li class="c-header__middle-list-item c-header__middle-list-item--active">
+*                    <a href="#">TARiHE GÖRE</a>
+*                </li>
+*                <li class="c-header__middle-list-item">
+*                    <a href="#">TÜRE GÖRE</a>
+*                </li>
+*            </ul>
+*        </div>
+*        <div class="c-header__right">
+*            <ul class="c-header__right-list">
+*                <li class="c-header__right-list-item">
+*                    <a href="#">
+*                        <img src="assets/images/icon/search.svg" alt="search">
+*                    </a>
+*                </li>
+*                <li class="c-header__right-list-item c-header__right-list-item--ticket">
+*                    <a href="#">
+*                        <img src="assets/images/icon/ticket-nav.svg" alt="ticket">
+*                    </a>
+*                </li>
+*                <li class="c-header__right-list-item">
+*                    <a href="#">EN</a>
+*                </li>
+*            </ul>
+*        </div>
+*    </header>
+*/
+
+
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: getColor(black);
+    height: 70px;
+    width: 1024px;
+    padding: 0px 27px;
+    a {
+        text-decoration: none;
+    }
+    &__left {
+        padding-right: 26px;
+    }
+    &__middle {
+        &-list {
+            display: flex;
+            align-items: center;
+            &-item {
+                height: 70px;
+                width: 240px;
+                text-align: center;
+                a {
+                    @include font-family(bold, 18px);
+                    color: rgba(255,255,255,.7);
+                    line-height: 70px;
+                }
+                &--active {
+                    background-color: getColor(cta-purple);
+                    a {
+                        color: getColor(white);
+                    }
+                }
+            }
+        }
+    }
+    &__right {
+        &-list {
+            display: flex;
+            align-items: center;
+            &-item {
+                height: 70px;
+                min-width: 70px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0px 10px;
+                // margin-left: 27px;
+
+                &--active {
+                    background-color: getColor(cta-purple);
+                    a {
+                        color: getColor(white);
+                    }
+                }
+
+                a {
+                    @include font-family(bold, 18px);
+                    color: rgba(255,255,255,.7);
+                }
+                &--ticket {
+                    background-color: getColor(cta-green);
+                    width: 74px;
+                    display: none;
+                    position: relative;
+                    & .ticket-badge {
+                        background: getColor(light-red);
+                        color: getColor(white);
+                        height: 16px;
+                        width: 16px;
+                        text-align: center;
+                        line-height: 16px;
+                        position: absolute;
+                        top: 13px;
+                        right: 13px;
+                        @include font-family(medium, 10px);
+                    }
+                    
+                }
+            }
+        }
+    }
+    &--ticket {
+        & .c-header__right-list-item--ticket {
+            display: flex;
+        }
+    }
+}

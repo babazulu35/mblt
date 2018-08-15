@@ -1,0 +1,25 @@
+$colors: (
+    default: (
+        white: #ffffff,
+        black: #000000,
+        cta-purple:#6C31ED,
+        cta-green:#09C800,
+        light-grey:#E6EDF2,
+        dark-grey:#555F66,
+        info-text-grey:#98AAB7,
+        bg-grey:#D5DFE6,
+        error-red:#D0021B,
+        light-red:#FF4800,
+        warning-orange:#DD9908,
+        modal-bg: #19191F
+    )
+);
+
+@function getColor($name, $alpha:1, $theme:default) {
+    $themeMap: map-get($colors, $theme);
+    @if map-has-key($themeMap, $name){
+		@return rgba(map-get($themeMap, $name), $alpha);
+	}
+	@warn "Unkown '#{$name}' in $colors at _variables.colors.scss";
+	@return null;
+}

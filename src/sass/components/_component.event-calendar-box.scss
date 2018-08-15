@@ -1,0 +1,226 @@
+//dialog panel
+
+.c-event-calendar-box {
+    display: block;
+    color: getColor(white);
+
+    &__header {
+        display: flex;
+        width: 100%;
+
+        &-left {
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: flex-start;
+            min-width: 60px;
+        }
+
+        &-center {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-right {
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: flex-end;
+            min-width: 60px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 560px;
+        padding: 0px 90px;
+        margin: auto;
+
+        my-date-picker {
+            .mydp {
+                background-color: transparent;
+                .inlinedp {
+                    background-color: transparent;
+                    border: none;
+
+                    .header {
+                        background-color: transparent;
+
+                        .headerbtncell {
+                            background-color: transparent;
+                            .headerbtn {
+                                background-color: transparent;
+                                color:getColor(white);
+                            }
+                        }
+
+                        .headeryeartxt {
+                            .headerlabelbtn {
+                                background-color: transparent;
+                                @include font-family(regular, 16px);
+                                color:getColor(white);
+                            }
+                        }
+
+                        .headermonthtxt {
+                            background-color: transparent;
+                            padding: 0px 30px;
+                            max-width: none;
+                            height: 30px;
+                            .headerlabelbtn {
+                                background-color: transparent;
+                                @include font-family(bold, 22px);
+                                color:getColor(white);
+                            }
+                        }
+                    }
+
+                    .caltable {
+                        background-color: transparent;
+                        thead {
+                            tr {
+                                height: 60px;
+
+                                .weekdaytitle {
+                                    background-color: transparent;
+                                    @include font-family(medium, 14px);
+                                    color: getColor(bg-grey);
+                                    width: 80px;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                .daycell {
+                                    position: relative;
+                                    @include font-family(medium, 14px);
+                                    color: getColor(bg-grey);
+                                    vertical-align: middle;
+                                    text-align: center;
+                                    width: 80px;
+                                    height: 80px;
+                                    padding: 0px;
+                                    box-sizing: border-box;
+                                    cursor: pointer;
+                                    background-color: transparent !important;
+
+                                    &.disabled {
+                                        .datevalue {
+                                            opacity: 0.5;
+                                            pointer-events: none;
+                                        }
+                                        &:focus {
+                                            outline: none !important;
+                                        }
+                                    }
+
+                                    .datevalue {
+                                        width: inherit;
+                                        @include font-family(bold, 28px);
+                                        color: getColor(light-grey);
+                                        line-height: 0px;
+
+                                        &.prevmonth {
+                                            color: rgba(255,255,255,.40) !important;
+                                        }
+
+                                        &.currmonth {
+                                            background: getColor(black) !important;
+                                        }
+
+                                        &.nextmonth {
+                                            color: rgba(255,255,255,.40) !important;
+                                        }
+
+                                        .markcurrday {
+                                            &::before {
+                                                content: "";
+                                                position: absolute;
+                                                width: 80px;
+                                                height: 80px;
+                                                background: getColor(black);
+                                                top: 0px;
+                                                left: 0px;
+                                                z-index: -1;
+                                            }
+                                        }
+                                    }
+
+                                    &.currmonth {
+
+                                    }
+
+                                    &.selectedday {
+                                        background: getColor(cta-purple) !important;
+                                        box-shadow: inset 0 1px 6px 0 rgba(0,0,0,0.1), 0 0 10px 0 rgba(107,38,255,0.8);
+                                        // border:2px solid getColor(cta-purple);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__month {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 65px;
+            span {
+                @include font-family(bold, 22px);
+                color:getColor(white);
+                margin: 0 35px;
+            }
+        }
+        &__weekdays {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            li {
+                @include font-family(medium, 14px);
+                color: getColor(bg-grey);
+                width: 80px;
+            }
+    
+        }
+        &__days {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            li {
+                @include font-family(bold, 28px);
+                color: getColor(light-grey);
+                line-height: 80px;
+                width: 80px;
+                height: 80px;
+                box-sizing: border-box;
+                cursor: pointer;
+            }
+            &--passed {
+                color: rgba(255,255,255,.40) !important;
+            }
+            &--today {
+                background: getColor(black);
+            }
+            &--selected {
+                background: getColor(cta-purple);
+                box-shadow: inset 0 1px 6px 0 rgba(0,0,0,0.1), 0 0 10px 0 rgba(107,38,255,0.8);
+                border:2px solid getColor(cta-purple);
+            }
+        }
+    }
+}

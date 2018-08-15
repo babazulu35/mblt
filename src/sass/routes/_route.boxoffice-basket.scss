@@ -1,0 +1,12 @@
+.r-boxoffice-basket {
+    &__content {
+        &-header {
+            height: 100px;
+            background-color: #19191F;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-body {}
+    }
+}

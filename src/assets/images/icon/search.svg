@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="25px" viewBox="0 0 26 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Navigation_Date" transform="translate(-908.000000, -23.000000)" fill="#FFFFFF">
+            <g id="Navigation">
+                <path d="M918,23 C912.477153,23 908,27.4771525 908,33 C908,38.5228475 912.477153,43 918,43 C923.522847,43 928,38.5228475 928,33 C928,30.3478351 926.946432,27.804296 925.071068,25.9289322 C923.195704,24.0535684 920.652165,23 918,23 Z M918,40 C914.134007,40 911,36.8659932 911,33 C911,29.1340068 914.134007,26 918,26 C921.865993,26 925,29.1340068 925,33 C925,34.8565154 924.262502,36.6369928 922.949747,37.9497475 C921.636993,39.2625021 919.856515,40 918,40 Z M927,43.1486529 L929.148653,41 L933.359366,45.2107129 L931.210713,47.3593657 L927,43.1486529 Z" id="Icon_Search"></path>
+            </g>
+        </g>
+    </g>
+</svg>

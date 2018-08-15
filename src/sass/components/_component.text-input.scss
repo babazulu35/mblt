@@ -1,0 +1,118 @@
+.c-text-input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+
+    &--error {
+        .c-text-input {
+            &__error {
+                width: 100%;
+                text-align: right;
+                color: getColor(error-red);
+                @include font-family(bold, 16px);
+                font-style: italic !important;
+                margin-top: 6px;
+                line-height: 1.2em;
+            }
+            &__input {
+                color: getColor(error-red);
+                border-bottom: 1px solid getColor(error-red);
+                line-height: 1.2em;
+            }
+        }
+    }
+
+    &--dirty {
+        .c-text-input {
+            &__label {
+                top: 0px;
+                @include font-family(medium, 14px);
+                color: getColor(dark-grey);
+            }
+        }
+    }
+
+    &__input {
+        @include font-family(bold, 18px);
+        color: getColor(white);
+        padding: 18px 0px 6px 0px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid getColor(dark-grey);
+        appearance: none;
+        background-color: rgba(0, 0, 0, 0);
+        cursor: inherit;
+        font: inherit;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        
+        &:focus {
+            outline: none;
+            border-bottom: 1px solid getColor(dark-grey);
+        }
+
+        &:focus~label {
+            top: 0px;
+            @include font-family(medium, 14px);
+            color: getColor(dark-grey);
+        }
+
+        &::-ms-reveal,
+            &::-ms-clear {
+                display: none;
+            }
+            &:required {
+                box-shadow: none !important;
+            }
+            &:invalid {
+                box-shadow: none !important;
+            }
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover,
+            &:-webkit-autofill:focus,
+            &:-webkit-autofill:active {
+                -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset !important;
+                background-color: rgba(0, 0, 0, 0) !important;
+                color: getColor(white);
+                background-image: none !important;
+                transition: all 5000s ease-in-out 0s;
+            }
+            &::-webkit-contacts-auto-fill-button {
+                visibility: hidden;
+                display: none !important;
+                pointer-events: none;
+                position: absolute;
+                right: 0;
+            }
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            
+            &[type="number"] {
+                -moz-appearance: textfield;
+            }
+    }
+    &__text-area {
+        padding: 35px 10px 70px 5px;
+        &::placeholder {
+            @include font-family(bold, 18px);
+            color: getColor(white);
+        }
+    }
+    &__label {
+        color: getColor(dark-grey);
+        @include font-family(bold, 18px);
+        pointer-events: none;
+        position: absolute;
+        top: 1em;
+        transition: 0.4s ease all;
+    }
+    // focus ~ label, valid ~ label {
+    //     top: 0px;
+    //     @include font-family(medium, 14px);
+    //     color: getColor(dark-grey);
+    // }
+}

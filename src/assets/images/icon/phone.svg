@@ -1,0 +1,14 @@
+<svg width="18px" height="28px" viewBox="0 0 18 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Kiosk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobilet_Kiosk_02_TicketPrint_Wallet_Secili" transform="translate(-514.000000, -715.000000)" fill="#FFFFFF">
+            <g id="Total" transform="translate(0.000000, 218.000000)">
+                <g id="Cta" transform="translate(484.000000, 470.000000)">
+                    <path d="M48,55 L30,55 L30,27 L48,27 L48,44.7333333 L44.2105263,44.7333333 L44.2105263,30.7333333 L33.7894737,30.7333333 L33.7894737,51.2666667 L44.2105263,51.2666667 L44.2105263,48.4666667 L48,48.4666667 L48,55 Z M41,49 C41,49.3284271 40.3284271,50 39,50 C38.6715729,50 38,49.3284271 38,49 C38,47.6715729 38.6715729,47 40,47 C40.3284271,47 41,47.6715729 41,49 Z" id="Icon_Phone-Copy"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

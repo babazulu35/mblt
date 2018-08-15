@@ -1,0 +1,21 @@
+{
+    "name": "nucleus",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "styleguide": "nucleus --config config.nucleus.json"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp-sass": "^4.0.1",
+        "nucleus-styleguide": "^1.1.1"
+    },
+    "dependencies": {
+        "copy-dir": "^0.3.0",
+        "gulp": "^3.9.1",
+        "run-sequence": "^2.2.1"
+    }
+}

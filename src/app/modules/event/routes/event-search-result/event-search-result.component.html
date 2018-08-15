@@ -1,0 +1,33 @@
+<div class="r-event-search-result">
+  <div class="r-event-search-result__header r-main__content-header">
+    <div class="r-main__content-header-left r-event-search-result__header-left">
+      <span class="r-event-search-result__header-left-icon">
+        <a href="javascript:void(0)" routerLink="/event/search"><img src="/assets/images/icon/arrow-left.svg"></a>
+      </span>
+      <div class="r-event-search-result__header-left-title">
+        {{ "EVENT_SEARCH_RESULT.TITLE" | translate }}
+      </div>
+      <div class="r-event-search-result__header-left-subtitle">
+        <span class="r-event-search-result__header-left-subtitle-query-text">"{{ queryText }}"</span>
+        <span> {{ "EVENT_SEARCH_RESULT.SUBTITLE_PART1" | translate }}</span>
+        <span class="r-event-search-result__header-left-subtitle-count"> {{ count }}</span>
+        <span> {{ "EVENT_SEARCH_RESULT.SUBTITLE_PART2" | translate }}</span>
+      </div>
+    </div>
+    <div class="r-main__content-header-right">
+
+    </div>
+    <div class="r-main__content-header-right">
+
+    </div>
+  </div>
+  <div class="r-event-search-result__content r-main__content-body">
+    <app-scroll-container>
+      <div class="r-event-search-result__content-wrapper">
+        <div *ngFor="let listEvent of listEvents" class="r-event-search-result__content-card">
+          <app-event-card [listEvent]="listEvent" (eventCardSelected)="navigateToEventDetail($event)"></app-event-card>
+        </div>
+      </div>
+    </app-scroll-container>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+.c-dialog-box {
+    display: block;
+
+    &--info {
+        *.c-dialog-box--has-theme {
+            color: getColor(info-text-grey);
+        }
+    }
+    &--warning {
+        *.c-dialog-box--has-theme {
+            color: getColor(warning-orange);
+        }
+    }
+    &--error {
+        *.c-dialog-box--has-theme {
+            color: getColor(error-red);
+        }
+    }
+    &--success {
+        *.c-dialog-box--has-theme {
+            color: getColor(cta-green);
+        }
+    }
+
+    &__container {
+        display: block;
+    }
+
+    &__icon {
+        display: block;
+        margin-bottom: 36px;
+    }
+
+    &__title {
+        @include font-family(bold, 28px);
+        line-height: 1.2em;
+        color: getColor(white);
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        @include font-family(regular, 20px);
+        line-height: 1.2em;
+        color: getColor(white);
+
+        b, strong {
+            @include font-family(bold, 20px);
+        }
+
+        p {
+            @include font-family(regular, 20px);
+            line-height: 1.2em;
+            color: getColor(white);
+
+            b, strong {
+                @include font-family(bold, 20px);
+            }
+
+            & + p {
+                margin-top: 36px;
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 36px;
+
+        > div:first-child {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        a {
+            @include font-family(bold, 24px);
+            color: getColor(cta-purple);
+        }
+        .c-button + .c-button,
+        .c-button + a,
+        a + a {
+            margin-top: 36px;
+        }
+    }
+}

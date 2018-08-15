@@ -1,0 +1,74 @@
+/**
+* @molecule Event Card
+* @section Cards
+* @description
+*  Includes event image, name, date, location.
+* @markup
+*    <div class="c-event-card">
+*        <div class="c-event-card__image">
+*            <a href="#">
+*                <img src="http://via.placeholder.com/270x160">
+*            </a>
+*            <span class="event-badge">Free</span>
+*        </div>
+*        <div class="c-event-card__content">
+*            <span class="c-event-card__content-title">Oscar and The Wolf</span>
+*            <span class="c-event-card__content-date">3-6 Nov 2017</span>
+*            <span class="c-event-card__content-location">Zorlu PSM, İstanbul</span>
+*        </div>
+*    </div>
+* @modifiers
+*   c-event-card--with-badge includes badge on image
+*/
+
+.c-event-card {
+    width: 270px;
+    &__image {
+        position: relative;
+        img {
+            vertical-align: middle;
+            width: 100%;
+            height: auto;
+        }
+        & .event-badge {
+            position: absolute;
+            top: 10px;
+            right: 0px;
+            padding: 4px 10px;
+            white-space: nowrap;
+            background-color: getColor(cta-purple);
+            color: getColor(white);
+            @include font-family(medium, 14px);
+            text-align: center;
+            line-height: 28px;
+            display: none;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        margin-bottom: 17px;
+        &-title {
+            line-height: 1.2em;
+            color: getColor(black);
+            @include font-family(bold, 18px);
+        }
+        &-date {
+            @include font-family(bold, 16px);
+            color:getColor(info-text-grey);
+            margin: 6px 0px 2px 0px;
+            line-height: 1.5em;
+        }
+        &-location {
+            @include font-family(medium, 16px);
+            color:getColor(info-text-grey);
+            line-height: 1.2em;
+        }
+    }
+    &--with-badge {
+        .event-badge {
+            display: block;
+        }
+    }
+}

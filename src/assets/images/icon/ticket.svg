@@ -1,0 +1,14 @@
+<svg width="20px" height="25px" viewBox="0 0 20 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Kiosk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobilet_Kiosk_02_TicketPrint_Wallet_Secili" transform="translate(-788.000000, -716.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Total" transform="translate(0.000000, 218.000000)">
+                <g id="Cta" transform="translate(754.000000, 470.000000)">
+                    <path d="M54,38.8333333 L50.6666667,38.8333333 L50.6666667,31.3333333 L49,31.3333333 C47.6265798,32.4315246 45.3734202,32.4315246 44,31.3333333 L42.3333333,31.3333333 L42.3333333,44.6666667 L50.6666667,44.6666667 L50.6666667,42.1666667 L54,42.1666667 L54,48 L39,48 L39,28 L45.6666667,28 C45.5,28.5664459 45.9477153,29.025641 46.5,28.8333333 C47.0522847,29.025641 47.5,28.5664459 47.3333333,28 L54,28 L54,38.8333333 Z M37.3333333,33 L37.3333333,49.6666667 L49,49.6666667 L49,53 L34,53 L34,33 L37.3333333,33 Z" id="Icon_Ticket"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

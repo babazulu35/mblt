@@ -1,0 +1,13 @@
+<div class="c-event-card">
+  <div class="c-event-card__image">
+      <a href="javascript:void(0)" (click)="onEventCardSelected($event)">
+          <img src="{{ listEventImage?.Url }}" alt="{{ listEventImage?.Name }}">
+      </a>
+      <span *ngIf="listEvent?.CmsEventCard.Warnings?.ShortWarnings" class="event-badge">{{ listEvent?.CmsEventCard.Warnings?.ShortWarnings }}</span>
+  </div>
+  <div class="c-event-card__content">
+      <span class="c-event-card__content-title">{{ listEvent?.CmsEventCard?.EventName }}</span>
+      <span class="c-event-card__content-date">{{ listEvent?.CmsEventCard?.EventDate }}</span>
+      <span class="c-event-card__content-location">{{ listEvent?.CmsEventCard?.VenueName }}</span>
+  </div>
+</div>

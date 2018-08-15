@@ -1,0 +1,26 @@
+export interface Variants {
+  AccessibleAfterClaim:boolean;
+  Campaigns:any;
+  CountOfProductsSelected:number;
+  FaceAmount:number;
+  FinalPrice:number;
+  FinalPriceVatAmount:number;
+  FinalTicketingFee:number;
+  FinalTicketingFeeVatAmount:number;
+  Id:number;
+  IsAvailable:boolean;
+  IsProductAvailable:boolean;
+  MaxAllowedCountOfProducts:number;
+  Name:string;
+  Price:any;
+  PriceVatAmount:number;
+  Reason:any;
+  Seats:any;
+  ServiceFee:number;
+  ServiceFeeAdjustmentType:number;
+  ServiceFeeAdjustmentType_Desc:string;
+  ServiceFeeVatAmount:number;
+  SubTotal:any;
+  TicketingFee:number;
+  TicketingFeeVatAmount:number;
+}

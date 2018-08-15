@@ -1,0 +1,20 @@
+<div class="c-event-calendar-box__header">
+  <div class="c-event-calendar-box__header-left">
+
+  </div>
+  <div class="c-event-calendar-box__header-center">
+    <!-- <span class="c-event-calendar-box__title">TAKVİM BAŞLIĞI</span> -->
+  </div>
+  <div class="c-event-calendar-box__header-right">
+    <app-button (clickEvent)="close()" theme="dark" icon="close"></app-button>
+  </div>
+</div>
+
+<div class="c-event-calendar-box__content">
+  <my-date-picker 
+    name="calendar" 
+    (dateChanged)="dateChangedHandler($event)"
+    [options]="calendarOptions"
+    [locale]="currentLocale?.code"
+    [selDate]="defaultDate"></my-date-picker>
+</div>

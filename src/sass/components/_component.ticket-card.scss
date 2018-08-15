@@ -1,0 +1,115 @@
+/**
+* @molecule Ticket Card
+* @section Cards
+* @description
+*  Ticket Cards for user to print tickets.
+* @markup
+*    <div class="c-ticket-card">
+*        <div class="c-ticket-card__select-area">
+*            <img src="assets/images/empty-check-icon.svg">
+*            <span>Seç</span>
+*        </div>
+*        <div class="c-ticket-card__image">
+*            <img src="http://via.placeholder.com/270x160">
+*        </div>
+*        <div class="c-ticket-card__content">
+*            <span class="c-ticket-card__content-ticket-info">1x Standard ticket</span>
+*            <div class="c-ticket-card__content-title">From Crafts to Design</div>
+*            <span class="c-ticket-card__content-date">Sun, 24 Mar 2016, 8pm</span>
+*            <span class="c-ticket-card__content-location">Zorlu PSM Ana Tiyatro, İstanbul</span>
+*        </div>
+*    </div>
+*    <div class="c-ticket-card c-ticket-card--selected">
+*        <div class="c-ticket-card__select-area">
+*            <img src="assets/images/checked-check-icon.svg">
+*            <span>Seçtiniz</span>
+*        </div>
+*        <div class="c-ticket-card__image">
+*            <img src="http://via.placeholder.com/270x160">
+*        </div>
+*        <div class="c-ticket-card__content">
+*            <span class="c-ticket-card__content-ticket-info">1x Standard ticket</span>
+*            <div class="c-ticket-card__content-title">From Crafts to Design</div>
+*            <span class="c-ticket-card__content-date">Sun, 24 Mar 2016, 8pm</span>
+*            <span class="c-ticket-card__content-location">Zorlu PSM Ana Tiyatro, İstanbul</span>
+*        </div>
+*    </div>
+* @modifiers
+*   c-ticket-card--selected selected ticket card
+*/
+
+.c-ticket-card {
+    display: inline-block;
+    width: 100%;
+    min-height: 465px;
+    cursor: pointer;
+    border: 1px solid #979797;
+    // background-color:getColor(light-grey);
+
+    &__select-area {
+        width: 100%;
+        height: 80px;
+        background-color:getColor(light-grey);
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        span {
+            @include font-family(bold, 24px);
+            margin-left: 18px;
+            color:getColor(cta-purple);
+        }
+    }
+    &__image {
+        background-color: getColor(white);
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+    &__content {
+        justify-content: flex-start;
+        padding: 20px 15px 32px 22px;
+        display: flex;
+        flex-direction: column;
+        span {
+            font-size: 16px;
+            color:getColor(info-text-grey);
+        }
+        &-title {
+            color: getColor(black, 18px);
+            @include font-family(bold);
+            line-height: 1.2em !important;
+            margin-bottom: 0.4em;
+        }
+        &-date {
+            @include font-family(bold);
+            line-height: 1.2em;
+        }
+        &-location {
+            @include font-family(medium);
+            line-height: 1.2em;
+        }
+        &-ticket-info {
+            @include font-family(bold, 18px);
+            color:getColor(cta-purple) !important;
+            margin-bottom: 0.4em;
+        }
+    }
+    &--selected {
+        box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.15);
+        border: 1px solid getColor(cta-purple);
+        & .c-ticket-card {
+            &__select-area {
+                background-color:getColor(cta-purple);
+                span {
+                    color: getColor(white);
+                }
+            }
+            &__content {
+
+            }
+        }
+    }
+}

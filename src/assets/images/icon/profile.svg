@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="36px" viewBox="0 0 27 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Profile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Kiosk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobilet_Kiosk_02_TicketPrint_Select" transform="translate(-438.000000, -276.000000)" fill="#FFFFFF">
+            <g id="Cta" transform="translate(347.000000, 249.000000)">
+                <path d="M91,47.250225 L118,47.250225 L118,51.749475 L95.5,51.749475 L95.5,58.499475 L113.5,58.499475 L113.5,55.500225 L118,55.500225 L118,63.000225 L91,63.000225 L91,47.250225 Z M104.5,45 C99.53725,45 95.5,40.96275 95.5,36 C95.5,31.03725 99.53725,27 104.5,27 C109.46275,27 113.5,31.03725 113.5,36 C113.5,40.96275 109.46275,45 104.5,45 Z M104.5,31.5 C102.01825,31.5 100,33.51825 100,36 C100,38.48175 102.01825,40.5 104.5,40.5 C106.98175,40.5 109,38.48175 109,36 C109,33.51825 106.98175,31.5 104.5,31.5 Z" id="Icon_Profile"></path>
+            </g>
+        </g>
+    </g>
+</svg>

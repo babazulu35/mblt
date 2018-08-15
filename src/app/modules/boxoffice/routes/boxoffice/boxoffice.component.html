@@ -1,0 +1,26 @@
+<div class="r-boxoffice">
+    <div class="r-boxoffice__content r-boxoffice__content-header">
+        <div class="r-boxoffice__content-header__title">
+            {{eventName}}
+        </div>
+        <div class="r-boxoffice__content-header__event-info">
+            <div class="r-boxoffice__content-header__event-info--detail">
+                <div class="r-boxoffice__content-header__event-info--detail-date">
+                    {{eventDate}}
+                </div>
+                <div class="r-boxoffice__content-header__event-info--detail-venue">
+                    {{venueName}}
+                </div>
+            </div>
+            <div class="r-boxoffice__content-header__event-info--icon">
+                <img [src]="'assets/images/icon/info.svg'" (click)="eventInfoModal()" />
+            </div>
+        </div>
+    </div>
+    <div class="r-boxoffice__content r-boxoffice__content-body">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="r-boxoffice__content r-boxoffice__content-footer">
+        <app-boxoffice-footer></app-boxoffice-footer>
+    </div>
+</div>

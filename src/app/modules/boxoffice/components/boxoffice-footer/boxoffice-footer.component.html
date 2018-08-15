@@ -1,0 +1,23 @@
+<div class="c-boxoffice__footer" *ngIf="content else campaign">
+    <div class="c-boxoffice__footer-left">
+        <app-button (clickEvent)="destroyShoppingCart()" theme="info" [label]="'BOXOFFICE_CANCEL_SHOPPING_SESSION' | translate"></app-button>
+    </div>
+    <div class="c-boxoffice__footer-content">
+      <span class="c-boxoffice__footer-content-title">
+        {{ "BOXOFFICE_SUBTOTAL_TEXT" | translate }}
+      </span>
+      <span class="c-boxoffice__footer-content-price">
+        {{subTotal}}TL
+      </span>
+    </div>
+      <div class="c-boxoffice__footer-right">
+        <div class="c-boxoffice__footer-button-group">
+          <app-button (clickEvent)="goToBasket()"  theme="primary" rightIcon="select-seat-arrow-right" [label]="'BOXOFFICE_GOTO_BASKET' | translate"></app-button>
+        </div>
+      </div>
+</div>
+
+<ng-template #campaign>
+    <div>Loading...</div>
+</ng-template>
+

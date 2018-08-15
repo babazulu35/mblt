@@ -1,0 +1,24 @@
+<div class="r-ticket-print-options">
+  <div class="r-ticket-print-options__header">
+    <div class="r-ticket-print-options__header-left">
+      
+    </div>
+    <div class="r-ticket-print-options__header-right">
+      <app-button (clickEvent)="close()" theme="dark" icon="close"></app-button>
+    </div>
+  </div>
+  
+  <div class="r-ticket-print-options__content">
+    <ul class="r-ticket-print-options__mood-list">
+      <li class="r-ticket-print-options__mood-item">
+        <app-button (clickEvent)="gotoTicketWallet()" size="full-width" icon="profile" [label]="'TICKET_PRINT_OPTIONS.SIGN_IN' | translate"></app-button>
+      </li>
+      <li class="r-ticket-print-options__mood-item">
+        <app-button (clickEvent)="gotoTicketPrintQr()" size="full-width" icon="qr-code" theme="info" [label]="'TICKET_PRINT_OPTIONS.PRINT_WITH_QR_CODE' | translate"></app-button>
+      </li>
+      <li class="r-ticket-print-options__mood-item r-ticket-print-options__mood-item-info-text">
+        <span>{{ 'TICKET_PRINT_OPTIONS.INFO_TEXT' | translate }}</span>
+      </li>
+    </ul>
+  </div>
+</div>

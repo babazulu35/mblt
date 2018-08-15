@@ -1,0 +1,31 @@
+<div class="r-ticket-wallet">
+  <div class="r-ticket-wallet__header r-main__content-header">
+    <div class="r-main__content-header-left">
+      <h1 [innerHTML]="'TICKET_WALLET.TITLE' | translate"></h1>
+      <h3 [innerHTML]="'TICKET_WALLET.SUB_TITLE' | translate"></h3>
+    </div>
+    <div class="r-main__content-header-right">
+        
+    </div>
+  </div>
+  <div class="r-ticket-wallet__content r-main__content-body">
+    <app-scroll-container [offsetHeight]="footerHeight">
+      <ul class="r-ticket-wallet__ticket-list">
+        <li class="r-ticket-wallet__ticket-list-item" *ngFor="let ticket of tickets">
+            <app-ticket-card (selectEvent)="ticketSelectHandler($event)" [ticket]="ticket"></app-ticket-card>
+        </li>
+      </ul>
+    </app-scroll-container>
+  </div>
+  <div class="r-ticket-wallet__footer r-main__content-footer">
+    <div class="r-main__content-footer-left">
+      <app-button (clickEvent)="logout()" theme="info" [label]="'TICKET_WALLET.LABEL.ACTION_LOGOUT' | translate"></app-button>
+    </div>
+    <div class="r-main__content-footer-right">
+      <div class="r-main__content-footer-button-group">
+        <!-- <app-button (clickEvent)="sendSmsSelection()" [isDisabled]="!selectedTickets?.length" theme="primary" icon="phone" [label]="'TICKET_WALLET.LABEL.ACTION_SMS' | translate"></app-button> -->
+        <app-button (clickEvent)="printSelection()" [isDisabled]="!selectedTickets?.length" theme="primary" icon="ticket" [label]="'TICKET_WALLET.LABEL.ACTION_PRINT' | translate"></app-button>
+      </div>
+    </div>
+  </div>
+</div>

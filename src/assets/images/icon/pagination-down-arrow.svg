@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="15px" viewBox="0 0 24 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Arrow_Left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pagination" transform="translate(-18.000000, -114.000000)" fill="#FFFFFF">
+            <polygon id="Icon_Arrow_Left" transform="translate(30.000000, 121.500000) scale(-1, 1) rotate(360.000000) translate(-30.000000, -121.500000) " points="30 122.333333 21.4285714 114 18 117.333333 30 129 42 117.333333 38.5714286 114"></polygon>
+        </g>
+    </g>
+</svg>

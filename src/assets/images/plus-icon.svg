@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Kiosk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.800000012">
+        <g id="Mobilet_Kiosk_Ticketing_02_SubTotal" transform="translate(-829.000000, -338.000000)" fill="#6C31ED">
+            <g id="Ticket" transform="translate(177.000000, 317.000000)">
+                <path d="M658,33 L652,33 L652,27.001 L658,27.001 L658,21 L663.999,21 L663.999,27.001 L670,27.001 L670,33 L663.999,33 L663.999,39 L658,39 L658,33 Z" id="Icon_Plus"></path>
+            </g>
+        </g>
+    </g>
+</svg>

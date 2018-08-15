@@ -1,0 +1,26 @@
+.c-event-session-box {
+    height: 80px;
+    width: 100%;
+    background-color: getColor(light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-checkbox {
+        margin-right: 5px;
+    }
+    &-time {
+        color: getColor(cta-purple);
+        @include font-family(bold, 20px);
+    }
+    &--selected {
+        background-color: getColor(cta-purple);
+        & .c-event-session-box-time {
+            color: white;
+        }
+    }
+}

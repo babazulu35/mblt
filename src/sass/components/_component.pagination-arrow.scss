@@ -1,0 +1,31 @@
+/**
+* @atom Pagination Arrows
+* @section Paginations
+* @description
+*  Up and down arrows that provide scroll
+* @markup
+*    <div class="c-pagination-arrow">
+*        <a href="#" class="c-pagination-arrow__top">
+*            <img src="assets/images/icon/pagination-up-arrow.svg">
+*        </a>
+*        <a href="#" class="c-pagination-arrow__down">
+*            <img src="assets/images/icon/pagination-down-arrow.svg">
+*        </a>
+*    </div>
+*/
+
+.c-pagination-arrow {
+    display: flex;
+    flex-direction: column;
+    a {
+        width: 60px;
+        height: 80px;
+        background-color: getColor(black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:first-child {
+            margin-bottom: 1px;
+        }
+    }
+}

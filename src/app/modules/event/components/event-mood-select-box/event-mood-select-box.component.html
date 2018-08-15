@@ -1,0 +1,24 @@
+<div class="c-event-mood-select-box__header">
+  <div class="c-event-mood-select-box__header-left">
+    <div class="c-event-mood-select-box__header-title">
+      {{ 'EVENT_MOOD_SELECT_BOX.TITLE' | translate }}
+    </div>
+    <div class="c-event-mood-select-box__header-sub-title">
+      {{ 'EVENT_MOOD_SELECT_BOX.SUB_TITLE' | translate }}
+    </div>
+  </div>
+  <div class="c-event-mood-select-box__header-right">
+    <app-button (clickEvent)="close()" theme="dark" icon="close"></app-button>
+  </div>
+</div>
+
+<div class="c-event-mood-select-box__content">
+  <ul class="c-event-mood-select-box__mood-list">
+    <li class="c-event-mood-select-box__mood-item" *ngFor="let containerType of containerTypes">
+      <app-button size="full-width" 
+                  [iconUrl]="containerType.AttributeImage" 
+                  [label]="containerType.Attribute"
+                  (clickEvent)="closeWithAttributeId(containerType)"></app-button>
+    </li>
+  </ul>
+</div>

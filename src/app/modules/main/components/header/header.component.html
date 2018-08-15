@@ -1,0 +1,34 @@
+<header class="c-header">
+  <div class="c-header__left">
+      <a href="#">
+          <img src="assets/images/logo/mobilet.svg" alt="mobilet">
+      </a>
+  </div>
+  <div class="c-header__middle">
+      <ul class="c-header__middle-list">
+          <li routerLink="/event/list/by-date" routerLinkActive="c-header__middle-list-item--active" class="c-header__middle-list-item">
+              <a>{{'HEADER.EVENT_TYPE.BY_DATE' | translate}}</a>
+          </li>
+          <li routerLink="/event/list/by-mood" routerLinkActive="c-header__middle-list-item--active" class="c-header__middle-list-item">
+            <a>{{'HEADER.EVENT_TYPE.BY_MOOD' | translate}}</a>
+          </li>
+      </ul>
+  </div>
+  <div class="c-header__right">
+      <ul class="c-header__right-list">
+          <li routerLink="/event/search" routerLinkActive="c-header__right-list-item--active" class="c-header__right-list-item">
+              <a>
+                  <img src="assets/images/icon/search.svg" alt="search">
+              </a>
+          </li>
+          <li class="c-header__right-list-item c-header__right-list-item--ticket">
+              <a href="#">
+                  <img src="assets/images/icon/ticket-nav.svg" alt="ticket">
+              </a>
+          </li>
+          <li class="c-header__right-list-item">
+              <a href="javascript:void(0)" (click)="toggleLang($event)">{{otherLocaleLabel}}</a>
+          </li>
+      </ul>
+  </div>
+</header>

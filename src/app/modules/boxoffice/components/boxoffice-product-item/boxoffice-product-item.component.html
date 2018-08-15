@@ -1,0 +1,25 @@
+<div *ngFor="let performances of productItemList?.Performances">
+    <div class="c-boxoffice-product-item" *ngFor="let product of performances?.Products">
+        <div class="c-boxoffice-product-item__name">
+            {{product?.Name}}
+        </div>
+        <div class="c-boxoffice-product-item__variant" *ngFor="let variant of product?.Variants">
+            <div class="c-boxoffice-product-item__variant-info" [ngClass]="{'c-boxoffice-product-item__variant-info--show': !isDisabled[variant.Id]}">
+                {{ "BOXOFFICE_NOT_AVAILABLE" | translate }}
+            </div>
+            <div class="c-boxoffice-product-item__variant-name">
+                {{variant?.Name}}
+            </div>
+            <div class="c-boxoffice-product-item__variant-quantity">
+                <div class="c-boxoffice-product-item__variant-quantity--price">
+                    {{variant?.FinalPrice}}TL
+                </div>
+                <div class="c-boxoffice-product-item__variant-quantity--count">
+                    <app-quantity-counter [maxCount]="variant.MaxAllowedCountOfProducts" [isDisabled]="!isDisabled[variant.Id]" [count]="countValue[variant.Id]" (changeEvent)="changeEventHandler($event,variant.Id)"></app-quantity-counter>
+                </div>
+            </div>
+        </div>
+        <div class="c-boxoffice-product-item__divider"></div>
+    </div>
+
+</div>

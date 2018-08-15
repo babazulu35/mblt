@@ -1,0 +1,26 @@
+<div class="r-event-search">
+  <div class="r-event-search__header">
+    <div class="r-event-search__header-left">
+      <div class="r-event-search__header-title">
+        {{ "EVENT_SEARCH.TITLE" | translate }}
+      </div>
+    </div>
+    <div class="r-event-search__header-right">
+      <app-button (clickEvent)="close()" theme="dark" icon="close"></app-button>
+    </div>
+  </div>
+  <div class="r-event-search__content">
+    <div class="r-event-search__content-input">
+      <div class="c-custom-input">
+        <input type="text" required class="c-custom-input__input" (keyup)="getItems($event)">
+        <label class="c-custom-input__label">{{ "EVENT_SEARCH.PLACEHOLDER" | translate }}</label>
+      </div>
+    </div>
+    
+    <div *ngIf="items" class="r-event-search__content-results">
+        <div *ngFor="let item of items" class="r-event-search__content-results-item">
+          <a href="javascript:void(0)" (click)="selectItem($event, item)">{{item}}</a>
+        </div>
+    </div>
+  </div>
+</div>

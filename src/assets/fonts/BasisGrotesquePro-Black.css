@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BasisGrotesqueProBlack';
+    src: url('/assets/fonts/BasisGrotesquePro-Black.eot');
+    src: url('/assets/fonts/BasisGrotesquePro-Black.eot') format('embedded-opentype'),
+         url('/assets/fonts/BasisGrotesquePro-Black.woff2') format('woff2'),
+         url('/assets/fonts/BasisGrotesquePro-Black.woff') format('woff'),
+         url('/assets/fonts/BasisGrotesquePro-Black.ttf') format('truetype'),
+         url('/assets/fonts/BasisGrotesquePro-Black.svg') format('svg');
+}

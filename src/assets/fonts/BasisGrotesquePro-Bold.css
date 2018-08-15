@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BasisGrotesqueProBold';
+    src: url('/assets/fonts/BasisGrotesquePro-Bold.eot');
+    src: url('/assets/fonts/BasisGrotesquePro-Bold.eot') format('embedded-opentype'),
+         url('/assets/fonts/BasisGrotesquePro-Bold.woff2') format('woff2'),
+         url('/assets/fonts/BasisGrotesquePro-Bold.woff') format('woff'),
+         url('/assets/fonts/BasisGrotesquePro-Bold.ttf') format('truetype'),
+         url('/assets/fonts/BasisGrotesquePro-Bold.svg') format('svg');
+}

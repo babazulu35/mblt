@@ -1,0 +1,30 @@
+<div [ngSwitch]="true" class="c-ticket-print-progress-box__container">
+
+  <!--print info-->
+  <app-dialog-box *ngSwitchCase="status === 'ready' || status == null" [title]="'TICKET_PRINT_PROGRESS_BOX.TITLE.READY'| translate" [theme]="status" [useThemeOnTitle]="true">
+    <span class="c-dialog-box__loading"><img src="assets/images/gif/loading.gif"/></span>
+  </app-dialog-box>
+
+  <!--print info-->
+  <app-dialog-box *ngSwitchCase="status === 'progress'" [title]="'TICKET_PRINT_PROGRESS_BOX.TITLE.PROGRESS'| translate" [theme]="status" [useThemeOnTitle]="true">
+      <span class="c-dialog-box__loading"><img src="assets/images/gif/loading.gif"/></span>
+  </app-dialog-box>
+
+  <!--print error-->
+  <app-dialog-box *ngSwitchCase="status === 'error'" [title]="'TICKET_PRINT_PROGRESS_BOX.TITLE.ERROR'| translate" [theme]="status" [useThemeOnTitle]="true">
+    <div actions>
+      <app-button (clickEvent)="retry()" [label]="'TICKET_PRINT_PROGRESS_BOX.LABEL.RETRY'| translate" theme="primary"></app-button>
+    </div>
+  </app-dialog-box>
+
+  <!--print success-->
+  <app-dialog-box *ngSwitchCase="status == 'success'" [title]="'TICKET_PRINT_PROGRESS_BOX.TITLE.SUCCESS'| translate" [theme]="status">
+    <div class="c-ticket-print-progress-box__description" [innerHTML]="'TICKET_PRINT_PROGRESS_BOX.DESCRIPTION.SUCCESS'| translate:{phone: user?.Phone?.PhoneNumber}"></div>
+    <div actions>
+      <app-button (clickEvent)="gotoHome()" [label]="'TICKET_PRINT_PROGRESS_BOX.LABEL.GOTO_HOME'| translate" theme="primary"></app-button>
+      <a *ngIf="role === 'wallet'" href="javascript:void(0)" (click)="gotoNewPrint()">{{'TICKET_PRINT_PROGRESS_BOX.LABEL.NEW_TICKET_PRINT'| translate}}</a>
+    </div>
+  </app-dialog-box>
+
+
+</div>

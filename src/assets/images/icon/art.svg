@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="33px" viewBox="0 0 42 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Art</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Kiosk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobilet_Kiosk_01_FilterMood" transform="translate(-158.000000, -332.000000)" fill="#FFFFFF">
+            <g id="mood_btns" transform="translate(77.000000, 303.000000)">
+                <g id="btn_art">
+                    <g id="Group-2" transform="translate(81.000000, 29.000000)">
+                        <path d="M30.1875,14.7631579 C28.0128788,14.7631579 26.25,13.0135338 26.25,10.8552632 C26.25,8.69699249 28.0128788,6.94736842 30.1875,6.94736842 C32.3621212,6.94736842 34.125,8.69699249 34.125,10.8552632 C34.125,13.0135338 32.3621212,14.7631579 30.1875,14.7631579 Z M42,17.3684211 L36.75,17.3684211 L36.75,5.21052632 L5.25,5.21052632 L5.25,24.2723684 L18.31375,12.1144737 L29.07625,21.4673684 L25.62,25.3839474 L18.43625,19.1486842 L9.14375,27.7894737 L36.75,27.7894737 L36.75,22.5789474 L42,22.5789474 L42,33 L0,33 L0,0 L42,0 L42,17.3684211 Z" id="Icon_Art"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

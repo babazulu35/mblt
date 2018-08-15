@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="30px" viewBox="0 0 24 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Ticket</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Navigation_Basket" transform="translate(-905.000000, -20.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Navigation">
+                <path d="M929,33 L925,33 L925,24 L923,24 C921.351896,25.3178295 918.648104,25.3178295 917,24 L915,24 L915,40 L925,40 L925,37 L929,37 L929,44 L911,44 L911,20 L919,20 C918.8,20.6797351 919.337258,21.2307692 920,21 C920.662742,21.2307692 921.2,20.6797351 921,20 L929,20 L929,33 Z M909,26 L909,46 L923,46 L923,50 L905,50 L905,26 L909,26 Z" id="Icon_Ticket"></path>
+            </g>
+        </g>
+    </g>
+</svg>

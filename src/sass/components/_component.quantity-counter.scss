@@ -1,0 +1,59 @@
+/**
+* @atom Quantity Counter
+* @section Inputs
+* @description
+*  Quantity counter using in ticket options.
+* @markup
+*    <div class="c-quantity-counter">
+*        <span class="c-quantity-counter__button c-quantity-counter__button--minus">
+*            <img src="assets/images/minus-icon.svg">
+*        </span>
+*        <label class="c-quantity-counter__number-counter">0</label>
+*        <span class="c-quantity-counter__button c-quantity-counter__button--plus">
+*            <img src="assets/images/plus-icon.svg">
+*        </span>
+*    </div>
+* @modifiers
+*   c-quantity-counter--disabled passive quantity counter
+*/
+
+.c-quantity-counter {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    // max-width: 158px;
+    &__number-counter {
+        padding: 14px 20px;
+        min-width: 80px;
+        border: 0;
+        background: getColor(bg-grey);
+        text-align: center;
+        display: block;
+        color: getColor(cta-purple);
+        @include font-family(bold, 28px);
+    }
+    &__button {
+        display: inline-block;
+        cursor: pointer;
+        img {
+            vertical-align: middle;
+            padding: 19px 21px;
+        }
+        &--minus {
+            img {
+                padding: 25px 21px;
+            }
+        }
+    }
+    &--disabled {
+        .c-quantity-counter {
+            &__button {
+                display: block;
+                visibility: hidden;
+            }
+            &__number-counter {
+                color: getColor(white);
+            }
+        }
+    }
+}

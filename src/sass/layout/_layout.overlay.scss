@@ -1,0 +1,59 @@
+.cdk-overlay-pane {
+    max-width: none !important;
+    
+    &--main {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        width: $width-screen;
+        height: $height-screen;
+        // height: calc(768px - #{$height-header});
+        // transform: translateY(#{$height-header/2});
+        margin: auto;
+        background-color: #ffffff;
+
+        > .mat-dialog-container {
+            padding: 0px;
+        }
+    }
+
+    &--dark {
+        background-color: #19191F;
+
+        > .mat-dialog-container {
+            background-color: #19191F;
+        }
+    }
+
+    &--modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        width: $width-screen;
+        height: $height-screen;
+        margin: auto;
+        background-color: getColor(black, 0.65);
+
+        > .mat-dialog-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            max-width: 530px;
+            padding: 60px;
+            background-color: getColor(modal-bg);
+            height: auto;
+            box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+            @include font-family(regular, 20px);
+            color: getColor(white);
+            line-height: 1.2em;
+
+            > * {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}

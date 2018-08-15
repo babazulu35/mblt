@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'BasisGrotesqueProRegular';
+    src: url('/assets/fonts/BasisGrotesquePro-Regular.eot');
+    src: url('/assets/fonts/BasisGrotesquePro-Regular.eot') format('embedded-opentype'),
+         url('/assets/fonts/BasisGrotesquePro-Regular.woff2') format('woff2'),
+         url('/assets/fonts/BasisGrotesquePro-Regular.woff') format('woff'),
+         url('/assets/fonts/BasisGrotesquePro-Regular.ttf') format('truetype'),
+         url('/assets/fonts/BasisGrotesquePro-Regular.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'BasisGrotesqueProMedium';
+    src: url('/assets/fonts/BasisGrotesquePro-medium.eot');
+    src: url('/assets/fonts/BasisGrotesquePro-medium.eot') format('embedded-opentype'),
+         url('/assets/fonts/BasisGrotesquePro-medium.woff2') format('woff2'),
+         url('/assets/fonts/BasisGrotesquePro-medium.woff') format('woff'),
+         url('/assets/fonts/BasisGrotesquePro-medium.ttf') format('truetype'),
+         url('/assets/fonts/BasisGrotesquePro-medium.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'BasisGrotesqueProBold';
+    src: url('/assets/fonts/BasisGrotesquePro-Bold.eot');
+    src: url('/assets/fonts/BasisGrotesquePro-Bold.eot') format('embedded-opentype'),
+         url('/assets/fonts/BasisGrotesquePro-Bold.woff2') format('woff2'),
+         url('/assets/fonts/BasisGrotesquePro-Bold.woff') format('woff'),
+         url('/assets/fonts/BasisGrotesquePro-Bold.ttf') format('truetype'),
+         url('/assets/fonts/BasisGrotesquePro-Bold.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'BasisGrotesqueProBlack';
+    src: url('/assets/fonts/BasisGrotesquePro-Black.eot');
+    src: url('/assets/fonts/BasisGrotesquePro-Black.eot') format('embedded-opentype'),
+         url('/assets/fonts/BasisGrotesquePro-Black.woff2') format('woff2'),
+         url('/assets/fonts/BasisGrotesquePro-Black.woff') format('woff'),
+         url('/assets/fonts/BasisGrotesquePro-Black.ttf') format('truetype'),
+         url('/assets/fonts/BasisGrotesquePro-Black.svg') format('svg');
+}
+
+
+@mixin font-family($name, $size:null, $style:normal, $important:!important) {
+
+    @if($name == "regular"){
+        font-family: 'BasisGrotesqueProRegular', sans-serif $important;
+        font-weight: 400;
+    }
+    
+    @if($name == "medium"){
+        font-family: 'BasisGrotesqueProMedium', sans-serif $important;
+        font-weight: 500;
+    }
+
+    @if($name == "bold"){
+        font-family: 'BasisGrotesqueProBold', sans-serif $important;
+        font-weight: 700;
+    }
+
+    @if($name == "extra-bold"){
+        font-family: 'BasisGrotesqueProBlack', sans-serif $important;
+        font-weight: 900;
+    }
+    @if($style) { 
+        font-style: $style $important; 
+    }@else{
+        font-style: normal; 
+    }
+    @if($size) {
+        font-size: $size $important;
+    }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="18px" viewBox="0 0 12 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Back</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Kiosk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobilet_Kiosk_Ticketing_02_SubTotal" transform="translate(-950.000000, -721.000000)" fill="#FFFFFF">
+            <g id="Total" transform="translate(0.000000, 688.000000)">
+                <g id="CTA" transform="translate(739.000000, 0.000000)">
+                    <g id="Icon_Arrow" transform="translate(217.000000, 42.000000) scale(-1, 1) translate(-217.000000, -42.000000) translate(211.000000, 33.000000)">
+                        <path d="M5.02845825,8.99995598 L12,15.506779 L9.3826303,18 L0,9.24322104 L0.255407362,8.99996922 L0,8.75671075 L9.3826303,0 L12,2.49287838 L5.02845825,8.99995598 Z" id="Icon_Back"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

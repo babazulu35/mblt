@@ -1,0 +1,71 @@
+.c-event-mood-select-box {
+
+    display: block;
+    color: getColor(white);
+    padding: 100px 0px 0px 0px;
+
+    &__header {
+        display: flex;
+        width: 100%;
+
+        &-left {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 90px;
+        }
+
+        &-right {
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: flex-end;
+            min-width: 60px;
+        }
+
+        &-title {
+            display: block;
+            color: getColor(white);
+            @include font-family(bold, 36px);
+        }
+
+        &-sub-title {
+            display: block;
+            color: getColor(white);
+            @include font-family(bold, 18px);
+            padding-top: 14px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 500px;
+        padding: 0 90px;
+    }
+
+    &__mood-list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        position: relative;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    &__mood-item {
+        display: inline-block;
+        padding: 10px;
+        width: 33.333%;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+}

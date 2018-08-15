@@ -1,0 +1,37 @@
+<div class="r-event-list">
+  <div class="r-event-list__header r-main__content-header">
+    <div class="r-main__content-header-left r-event-list__header-left">
+      <div class="r-event-list__header-left-title">
+        {{ "EVENT_LIST.TITLE" | translate }}/
+      </div>
+      <div class="r-event-list__header-left-subtitle">
+        {{ filterText }}
+      </div>
+    </div>
+    <div *ngIf="listType == 1" class="r-main__content-header-right">
+        <app-event-filter-bar [listItems]="dateFilters" (clickEvent)="onFilterSelected($event)"></app-event-filter-bar>
+    </div>
+    <div *ngIf="listType == 2" class="r-main__content-header-right">
+      <nav class="c-list-filter-bar">
+        <ul class="c-list-filter-bar__list">
+            <li class="c-list-filter-bar__list-item">
+              <a href="javascript:void(0)" (click)="openMoodSelectionBox($event)">{{ "EVENT_LIST.CHANGE_MOOD" | translate}}</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="r-event-list__content r-main__content-body">
+    <app-scroll-container>
+      <div class="r-event-list__content-wrapper">
+          <div *ngFor="let listEvent of listEvents"  class="r-event-search-result__content-card">
+              <app-event-card [listEvent]="listEvent" (eventCardSelected)="navigateToEventDetail($event)"></app-event-card>
+          </div>
+      </div>
+    </app-scroll-container>
+  </div>
+
+  <div class="r-event-list__print-button">
+    <app-button [routerLink]="['/ticket']" icon="ticket" [label]="'EVENT_LIST.LABEL.PRINT_TICKET' | translate" size="lg" theme="secondary"></app-button>
+  </div>
+</div>

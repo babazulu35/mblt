@@ -1,0 +1,82 @@
+/**
+* @molecule Custom Input
+* @section Form Elements
+* @description
+*  Custom material design like input
+* @markup
+*    <div class="c-custom-input">
+*        <input type="number" required class="c-custom-input__input">
+*        <label class="c-custom-input__label">Mobile No</label>
+*    </div>
+*
+*    <div class="c-custom-input form-error">
+*        <input type="text" required class="c-custom-input__input">
+*        <div class="form-error__text">Lorem Ipsum Dolor</div>
+*        <label class="c-custom-input__label">Mobile No</label>
+*    </div>
+*/
+
+.c-custom-input {
+    position: relative;
+    &__input {
+        @include font-family(bold, 18px);
+        color: getColor(white);
+        padding: 10px 0px 10px 0px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid getColor(dark-grey);
+        background-color: transparent;
+        appearance: none;
+        &:focus {
+            outline: none;
+            border-bottom: 1px solid getColor(dark-grey);
+        }
+        &:focus~label {
+            top: -10px;
+            @include font-family(medium, 14px);
+            color: getColor(dark-grey);
+        }
+    }
+    &__text-area {
+        padding: 35px 10px 70px 5px;
+        &::placeholder {
+            @include font-family(bold, 18px);
+            color: getColor(white);
+        }
+    }
+    &__label {
+        color: getColor(dark-grey);
+        @include font-family(bold, 18px);
+        pointer-events: none;
+        position: absolute;
+        top: 10px;
+        transition: 0.4s ease all;
+    }
+    input:focus ~ label, input:valid ~ label {
+        top:-10px;
+        @include font-family(medium, 14px);
+        color: getColor(dark-grey);
+      }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    appearance: none; 
+    margin: 0; 
+}
+
+.form-error {
+    &__text {
+        width: 100%;
+        text-align: right;
+        color: getColor(error-red);
+        @include font-family(bold, 16px);
+        font-style: italic !important;
+        margin-top: 6px;
+    }
+    .c-custom-input__input {
+        color: getColor(error-red);
+        border-bottom: 1px solid getColor(error-red);
+    }
+}

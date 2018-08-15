@@ -1,0 +1,36 @@
+.r-event-search-result {
+    &__header {
+        &-left {
+            display: block;
+            position: relative;
+            &-icon {
+                position: absolute;
+                left:-41px;
+                top:6px;
+                cursor: pointer;
+            }
+            &-title {
+                display: block;
+                @include font-family(extra-bold, 36px);
+    
+            }
+            &-subtitle {
+                margin-top: 0.5em;
+                display: block;
+                @include font-family(regular, 16px);
+                &-query-text,
+                &-count {
+                    @include font-family(bold, 16px);
+                }
+            }
+        }
+    }
+    &__content-wrapper {
+        float: left;
+        
+    }
+    &__content-card {
+        display: inline-block;
+        padding: 4px 13px 14px 2px;
+    }
+}
